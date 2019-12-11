@@ -1,4 +1,4 @@
-name: Daffodil Pull Request Only Checks
+name: Daffodil Pull Request Checks
 
 on: pull_request
 
