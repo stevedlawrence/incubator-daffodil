@@ -1,0 +1,16 @@
+name: Daffodil Pull Request Only Checks
+
+on: pull_request
+
+jobs:
+  single-commit-pull-request-check:
+    name: Single Commit Pull Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v1.0.0
+      - name: Single Commit Pull Request
+        uses: ./.github/actions/single-commit-pull-request-check/
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
