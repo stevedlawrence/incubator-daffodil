@@ -1,0 +1,12 @@
+name: "Single Commit Pull Request Check"
+description: "Check that a pull request contains only a single commit"
+inputs:
+  repo-token:
+    description: "Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}"
+    required: true
+runs:
+  using: "node12"
+  main: "main.js"
+branding:
+   icon: 'git-commit'
+   color: 'white' 
