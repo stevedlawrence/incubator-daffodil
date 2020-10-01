@@ -322,8 +322,38 @@ final class SimpleTypeRuntimeData(
       val minAsLong = minLength.longValue()
       val isMinLengthGreaterThanEqToZero = minAsLong.compareTo(0L) >= 0
       if (isMinLengthGreaterThanEqToZero) {
-        if (!checkMinLength(currentElement, minLength, e, primType))
+        if (!checkMinLength(currentElement, minLength, e, primType)) {
+          if (false) {
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+            println("FOOOOOOOOOOOOOOOOOOOOO")
+          }
           return Error("facet minLength (%s)".format(minLength))
+        }
       }
     }
     // Check maxLength
