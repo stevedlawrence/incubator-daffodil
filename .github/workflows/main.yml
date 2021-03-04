@@ -24,7 +24,7 @@ jobs:
       fail-fast: false
       matrix:
         java_version: [ 8, 11, 15 ]
-        scala_version: [ 2.12.11 ]
+        scala_version: [ 2.12.13 ]
         os: [ 'ubuntu-latest', 'windows-latest' ]
     env:
       SBT: sbt -J-Xms1024m -J-Xmx5120m -J-XX:ReservedCodeCacheSize=512m -J-XX:MaxMetaspaceSize=1024m ++${{ matrix.scala_version }} coverage
